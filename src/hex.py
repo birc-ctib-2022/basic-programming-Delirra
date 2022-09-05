@@ -18,6 +18,6 @@ match command:
 
     case "decode":
         # Implement the decoding here
-        int_list = [int(char, base = 16) for char in y.split('0x')[1:]]
+        int_list = [int(char, base = 16) for char in x.split('0x')[1:]]
         decoding = ''.join([chr(char) for char in int_list])
         print(decoding)
