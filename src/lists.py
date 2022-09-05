@@ -1,5 +1,6 @@
 import sys
 
+
 # This reads all of stdin and converts it into a list of integers.
 # This *only* works if there are no non-integers in the input.
 # You can learn how to deal with errors later...
@@ -45,7 +46,7 @@ match sys.argv[1]:
         sum_of_list = 0
         for i in x:
             sum_of_list + i
-        mean = sum_of_list/len(x)
+        mean = sum(x)/len(x)
         print(mean)
 
     case "times":
